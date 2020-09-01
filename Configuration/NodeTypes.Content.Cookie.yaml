@@ -1,13 +1,11 @@
 'KaufmannDigital.GDPR.CookieConsent:Content.Cookie':
   superTypes:
     'Neos.Neos:Content': true
-  childNodes:
-    attributes:
-      type: 'Neos.Neos:ContentCollection'
-      constraints:
-        nodeTypes:
-          '*': false
-          'KaufmannDigital.GDPR.CookieConsent:Content.Cookie.Attribute': true
+    'Neos.Neos:ContentCollection': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'KaufmannDigital.GDPR.CookieConsent:Content.Cookie.Attribute': true
   ui:
     label: 'Cookie'
     icon: icon-cookie
@@ -54,7 +52,7 @@
           group: cookie
           editor: Neos.Neos/Inspector/Editors/CodeEditor
     priority:
-      type: integer
+      type: string
       defaultValue: 0
       ui:
         label: 'Priorität'

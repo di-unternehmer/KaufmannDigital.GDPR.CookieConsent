@@ -1,13 +1,11 @@
 'KaufmannDigital.GDPR.CookieConsent:Content.CookieSettings':
   superTypes:
     'Neos.Neos:Content': true
-  childNodes:
-    settingElements:
-      type: 'Neos.Neos:ContentCollection'
-      constraints:
-        nodeTypes:
-          '*': false
-          'KaufmannDigital.GDPR.CookieConsent:Content.CookieGroup': true
+    'Neos.Neos:ContentCollection': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'KaufmannDigital.GDPR.CookieConsent:Content.CookieGroup': true
   ui:
     label: 'Cookie Settings'
     icon: 'icon-cookie'
