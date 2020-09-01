@@ -10,10 +10,10 @@ prototype(KaufmannDigital.GDPR.CookieConsent:Content.CookieGroup) < prototype(Ne
 
     cookieContentCollection = Neos.Neos:ContentCollection {
         attributes.class = 'gdpr-cookieconsent-setting-group__cookies'
-        nodePath = 'cookies'
+        @context.node = ${node}
     }
 
-    hasCookies = ${q(node).children('cookies').children().count() > 0}
+    hasCookies = ${q(node).children().children().count() > 0}
     identifier = ${q(node).property('identifier')}
     inBackend = ${node.context.inBackend}
 
