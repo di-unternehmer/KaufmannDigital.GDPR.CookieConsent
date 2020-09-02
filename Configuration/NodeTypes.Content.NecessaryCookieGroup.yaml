@@ -1,6 +1,7 @@
 'KaufmannDigital.GDPR.CookieConsent:Content.NecessarySettingGroup':
   superTypes:
     'KaufmannDigital.GDPR.CookieConsent:Content.CookieGroup': true
+  label: "${('Notwendige Gruppe: ' + q(node).property('headline')) || 'Cookie Gruppe'}"
   ui:
     label: 'Notwendige Cookies Gruppe'
     group: 'cookies'

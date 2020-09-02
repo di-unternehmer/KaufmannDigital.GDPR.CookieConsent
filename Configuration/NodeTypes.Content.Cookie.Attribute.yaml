@@ -1,9 +1,10 @@
 'KaufmannDigital.GDPR.CookieConsent:Content.Cookie.Attribute':
   superTypes:
     'Neos.Neos:Content': true
+  label: "${('Attribut: ' + q(node).property('label'))}"
   ui:
-    label: 'Cookie Attribut'
-    icon: 'icon-cookie'
+    label: "Attribut"
+    icon: 'icon-plus'
     group: 'cookies'
   properties:
     label:

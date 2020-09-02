@@ -6,9 +6,10 @@
     nodeTypes:
       '*': false
       'KaufmannDigital.GDPR.CookieConsent:Content.Cookie': true
+  label: "${('Cookie Gruppe: ' + q(node).property('identifier')) || 'Cookie Gruppe'}"
   ui:
     label: 'Cookie Gruppe'
-    icon: 'icon-cookie'
+    icon: 'icon-object-group'
     group: 'cookies'
     inspector:
       groups:
