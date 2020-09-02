@@ -7,7 +7,7 @@
       '*': false
       'KaufmannDigital.GDPR.CookieConsent:Content.Cookie.Attribute': true
   ui:
-    label: 'Cookie'
+    label: "${('Cookie: ' + q(node).property('name')) || 'Cookie' }"
     icon: icon-cookie
     group: 'cookies'
     inspector:

@@ -8,7 +8,7 @@
       'KaufmannDigital.GDPR.CookieConsent:Content.CookieGroup': true
   ui:
     label: 'Cookie Settings'
-    icon: 'icon-cookie'
+    icon: 'icon-cog'
     group: 'cookies'
     inlineEditable: true
     inspector:

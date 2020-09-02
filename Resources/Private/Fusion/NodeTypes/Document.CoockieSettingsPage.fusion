@@ -8,8 +8,7 @@ prototype(KaufmannDigital.GDPR.CookieConsent:Document.CookieSettingsPage) < prot
         attributes.href = Neos.Fusion:ResourceUri {
             path = ${siteCSSFilepath}
         }
-
-
+        @if.hasPath = ${siteCSSFilepath}
     }
 
     body >
